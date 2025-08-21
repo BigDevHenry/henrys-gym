@@ -1,11 +1,11 @@
-// Preloader fade
+// Preloader
 window.addEventListener('load', () => {
   setTimeout(() => {
     const preloader = document.getElementById('preloader');
     preloader.style.opacity = '0';
     preloader.style.transition = 'opacity 0.5s';
     setTimeout(() => preloader.style.display = 'none', 500);
-  }, 3000); // 3 seconds
+  }, 3000);
 });
 
 let currentLang = 'en';
@@ -26,8 +26,14 @@ langBtn.addEventListener('click', () => {
     a.textContent = a.dataset[currentLang];
   });
 
-  document.querySelectorAll('[data-en]').forEach(el => {
-    if(el.dataset.en) el.textContent = el.dataset[currentLang];
+  document.querySelectorAll('.class-card, .trainer-card').forEach(card => {
+    if(card.classList.contains('class-card')) {
+      card.querySelector('h3').textContent = card.dataset[`${currentLang}Title`];
+      card.querySelector('p').textContent = card.dataset[`${currentLang}Desc`].split('. ')[0] + '.';
+    } else {
+      card.querySelector('h3').textContent = card.dataset[`${currentLang}Name`];
+      card.querySelector('p').textContent = card.dataset[`${currentLang}Bio`].split('|')[0];
+    }
   });
 });
 
