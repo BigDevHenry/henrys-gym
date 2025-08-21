@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iron Haven Gym</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yH0nKb0RTh8P3hDcPV4Z1p2D5+vOtq9z9O7qM5pDqigwH3pLq7/SzPpU6Jqz2r/nFztG+X2lgKj+K0B6r3+8dg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <div class="logo-preloader">
+        <h1>Iron Haven</h1>
+      </div>
+      <div class="ripple"></div>
+    </div>
+  </div>
+
+  <!-- Language Toggle -->
+  <button id="lang-toggle">Español</button>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1 class="logo">Iron Haven</h1>
+      <ul class="nav-links">
+        <li><a href="#welcome" data-en="Home" data-es="Inicio">Home</a></li>
+        <li><a href="#classes" data-en="Classes" data-es="Clases">Classes</a></li>
+        <li><a href="#trainers" data-en="Trainers" data-es="Entrenadores">Trainers</a></li>
+        <li><a href="#reviews" data-en="Reviews" data-es="Reseñas">Reviews</a></li>
+        <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero fade-section" id="welcome">
+    <div class="hero-content" data-en-text="Welcome to Iron Haven|Where Strength Meets Dedication" 
+         data-es-text="Bienvenido a Iron Haven|Donde la Fuerza Encuentra la Dedicación">
+      <h2>Welcome to Iron Haven</h2>
+      <p>Where Strength Meets Dedication</p>
+      <a href="#classes" class="btn" data-en="Join Now" data-es="Únete Ahora">Join Now</a>
+    </div>
+  </section>
+
+  <!-- Classes Section -->
+  <section class="classes fade-section" id="classes">
+    <h2 data-en="Our Classes" data-es="Nuestras Clases">Our Classes</h2>
+    <div class="class-cards">
+      <div class="class-card" style="background-image: url('images/class1.jpg');"
+           data-en-title="Strength Training" data-es-title="Entrenamiento de Fuerza"
+           data-en-desc="Build muscle and endurance with expert coaching. Our strength program combines weightlifting, functional exercises, and progressive overload techniques to maximize results for all fitness levels." 
+           data-es-desc="Construye músculo y resistencia con entrenadores expertos. Nuestro programa de fuerza combina levantamiento de pesas, ejercicios funcionales y técnicas de sobrecarga progresiva para maximizar resultados para todos los niveles.">
+        <div class="card-overlay">
+          <h3 data-en="Strength Training" data-es="Entrenamiento de Fuerza">Strength Training</h3>
+          <p data-en="Build muscle and endurance with expert coaching." data-es="Construye músculo y resistencia con entrenadores expertos.">Build muscle and endurance with expert coaching.</p>
+        </div>
+      </div>
+
+      <div class="class-card" style="background-image: url('images/class2.jpg');"
+           data-en-title="Yoga & Flexibility" data-es-title="Yoga y Flexibilidad"
+           data-en-desc="Relax and improve flexibility. Our yoga sessions focus on breathing, posture, and balance to enhance both physical and mental well-being. Suitable for beginners and experienced practitioners." 
+           data-es-desc="Relájate y mejora tu flexibilidad. Nuestras sesiones de yoga se enfocan en la respiración, postura y equilibrio para mejorar el bienestar físico y mental. Adecuado para principiantes y practicantes experimentados.">
+        <div class="card-overlay">
+          <h3 data-en="Yoga & Flexibility" data-es="Yoga y Flexibilidad">Yoga & Flexibility</h3>
+          <p data-en="Relax and improve flexibility." data-es="Relájate y mejora tu flexibilidad.">Relax and improve flexibility.</p>
+        </div>
+      </div>
+
+      <div class="class-card" style="background-image: url('images/class3.jpg');"
+           data-en-title="HIIT" data-es-title="HIIT"
+           data-en-desc="High-intensity interval training. Push your limits with short bursts of intense exercises followed by recovery periods, designed to burn fat, increase stamina, and boost cardiovascular health." 
+           data-es-desc="Entrenamiento en intervalos de alta intensidad. Supera tus límites con ráfagas cortas de ejercicios intensos seguidos de períodos de recuperación, diseñados para quemar grasa, aumentar la resistencia y mejorar la salud cardiovascular.">
+        <div class="card-overlay">
+          <h3 data-en="HIIT" data-es="HIIT">HIIT</h3>
+          <p data-en="High-intensity interval training." data-es="Entrenamiento en intervalos de alta intensidad.">High-intensity interval training.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainers Section -->
+  <section class="trainers fade-section" id="trainers">
+    <h2 data-en="Meet Our Trainers" data-es="Conoce a Nuestros Entrenadores">Meet Our Trainers</h2>
+    <div class="trainer-cards">
+      <div class="trainer-card" data-img="images/gym2.jpg"
+           data-en-name="Alex Johnson" data-es-name="Alex Johnson"
+           data-en-bio="Certified Strength & Conditioning Specialist (CSCS) | 8 years coaching experience | Specializes in muscle building, functional training, and personalized fitness plans."
+           data-es-bio="Especialista Certificado en Fuerza y Acondicionamiento (CSCS) | 8 años de experiencia | Especializado en desarrollo muscular, entrenamiento funcional y planes de fitness personalizados.">
+        <img src="images/gym2.jpg" alt="Trainer 1" />
+        <div class="trainer-info">
+          <h3 data-en="Alex Johnson" data-es="Alex Johnson">Alex Johnson</h3>
+          <p data-en="Strength Coach" data-es="Entrenador de Fuerza">Strength Coach</p>
+        </div>
+      </div>
+
+      <div class="trainer-card" data-img="images/gym3.jpg"
+           data-en-name="Maria Lopez" data-es-name="Maria Lopez"
+           data-en-bio="Certified Yoga Instructor (RYT 200) | 5 years teaching experience | Focused on flexibility, mindfulness, and injury prevention."
+           data-es-bio="Instructora de Yoga Certificada (RYT 200) | 5 años de experiencia enseñando | Enfocada en flexibilidad, mindfulness y prevención de lesiones.">
+        <img src="images/gym3.jpg" alt="Trainer 2" />
+        <div class="trainer-info">
+          <h3 data-en="Maria Lopez" data-es="Maria Lopez">Maria Lopez</h3>
+          <p data-en="Yoga Instructor" data-es="Instructora de Yoga">Yoga Instructor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews fade-section" id="reviews">
+    <h2 data-en="Client Reviews" data-es="Reseñas de Clientes">Client Reviews</h2>
+    <div class="review-cards">
+      <div class="review-card">
+        <p>"Alex's training program transformed my strength and confidence!"</p>
+        <h4>- John D.</h4>
+      </div>
+      <div class="review-card">
+        <p>"Maria's yoga sessions helped me find balance and flexibility."</p>
+        <h4>- Sarah K.</h4>
+      </div>
+      <div class="review-card">
+        <p>"Best gym experience ever — supportive trainers and motivating environment."</p>
+        <h4>- Mike S.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact fade-section" id="contact">
+    <h2 data-en="Contact Us" data-es="Contáctanos">Contact Us</h2>
+    <p>Email: info@ironhaven.com | Phone: (123) 456-7890</p>
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/yourpage" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="fade-section">
+    <p>&copy; 2025 Iron Haven Gym. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="" alt="modal image" id="modal-img"/>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
